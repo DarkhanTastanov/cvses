@@ -2,19 +2,17 @@ package com.example.chess
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_profile)
 
         // Handle window insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -23,18 +21,13 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Find the button with ID button2
-        val button2 = findViewById<Button>(R.id.button2)
+        // Find the ImageView (backIcon)
+        val backIcon = findViewById<ImageView>(R.id.backIcon)
 
-        // Set click listener to open ProfileActivity
-        button2.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
+        // Set click listener to go back to MainActivity
+        backIcon.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        }
-        val play_button = findViewById<LinearLayout>(R.id.play_button)
-
-        play_button.setOnClickListener {
-            Toast.makeText(this, "No connection", Toast.LENGTH_SHORT).show()
         }
     }
 }

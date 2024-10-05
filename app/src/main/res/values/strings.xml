@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Chess</string>
+    <string name="app_name">Chesscom</string>
+    <string name="user_name">Ayanokojikz</string>
+    <string name="country_name">Казахстан</string>
+    <string name="reg_day">Рег. 22 янв. 2023 г.</string>
+    <string name="statistics">Статистика</string>
+    <string name="stat_blis">Блиц</string>
+    <string name="stat_blis_num">664</string>
+    <string name="stat_rapid">Рапид</string>
+    <string name="stat_rapid_num">915</string>
+    <string name="stat_days">Заочные</string>
+    <string name="stat_days_num">1078</string>
+    <string name="stat_all">Все</string>
+    <string name="last_p">Недавние партии</string>
+    <string name="played_games">138</string>
+    <string name="player_name1">Nahrad (1301)</string>
+    <string name="player_name2">MagnusCarlsen (3300)</string>
+    <string name="player_name3">Hikaru (3279)</string>
+    <string name="player_name4">ElonMusk (3099)</string>
+    <string name="player_name5">BillGates (2500)</string>
+
+    <string name="friends">Друзья</string>
+    <string name="friends_num">4</string>
+
+
 </resources>
